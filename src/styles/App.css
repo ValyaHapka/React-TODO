@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    width: 360px;
+    margin-top: 3em;
+    gap: 1em;
+
+}
+.list {
+    margin-top: 10px;
+}
+.item {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(157, 18, 212);
+    border-radius: 16px;
+    padding: 5px 15px;
+}
+.item.done {
+    text-decoration: line-through;
+}
