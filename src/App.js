@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import TODOCreate from './components/TODOCreate';
 import TODOList from './components/TODOList';
-import './styles/App.css';
+import './styles/App.scss';
 
 
 function App() {

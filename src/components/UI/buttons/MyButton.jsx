@@ -1,5 +1,5 @@
 import React from 'react'
-import cl from './MyButton.module.css'
+import cl from './MyButton.module.scss'
 
 export default function MyButton({children, ...props}) {
   return (

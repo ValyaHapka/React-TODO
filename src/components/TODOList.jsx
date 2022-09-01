@@ -14,8 +14,8 @@ export default function TODOList({TODOs, remove, toggle}) {
           done={doneTODO}
           todo={todo} 
           remove={remove} 
-          key={todo.id}>
-        </TODOItem> 
+          key={todo.id}
+        />
       )}
     </section>
   )

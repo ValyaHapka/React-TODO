@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import cl from './MyInput.module.css'
+import cl from './MyInput.module.scss'
 
 export default function MyInput(props) {
   const ref = useRef('TODO')
