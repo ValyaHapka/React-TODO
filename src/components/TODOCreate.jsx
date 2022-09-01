@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import MyButton from './UI/buttons/MyButton'
 import MyInput from './UI/inputs/MyInput'
+import MyTime from './UI/inputs/MyTimeInp'
 
 
 export default function TODOCreate({create}) {
@@ -24,13 +25,11 @@ export default function TODOCreate({create}) {
     <form className='header'>
       <MyInput 
         placeholder={'TODO'}
-        type={'text'}
         value={todo.value}
         onChange={e => setTodo({...todo, value: e.target.value})}
       />
-      <MyInput 
+      <MyTime 
         placeholder={'Time'}
-        type={'time'}
         value={todo.time}
         onChange={e => setTodo({...todo, time: e.target.value})}
       />

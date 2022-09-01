@@ -7,6 +7,6 @@ export default function MyInput(props) {
     ref.current.focus();
   }, [])
   return (
-    <input {...props} className={cl.myInput} ref={ref}/>
+    <input {...props} className={cl.myInput} ref={ref} type={'text'}/>
   )
 }
