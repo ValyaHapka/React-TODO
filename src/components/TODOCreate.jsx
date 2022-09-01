@@ -9,13 +9,15 @@ export default function TODOCreate({create}) {
 
   function addNewTODO(e) {
     e.preventDefault()
-    const newPost = {
+    if (todo.value !== '' && todo.time !== '') {
+      const newPost = {
         ...todo,
         id: Date.now(),
         done: false
+      }
+      create(newPost)
+      setTodo({title: '', body: ''})
     }
-    create(newPost)
-    setTodo({title: '', body: ''})
   }
 
   return (
